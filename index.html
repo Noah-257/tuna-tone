@@ -7,7 +7,27 @@
     <title>Guitar Tuna</title>
 </head>
 <body>
-    <h1>Welcome to Guitar Tuna</h1>
-    <p>Your ultimate guitar tuning companion!</p>
+    <main class="tuner">
+        <h1>Welcome to Tuna Tone</h1>
+
+        <label for="frequencyInput">Frequency (Hz)</label>
+
+        <input
+            type="number" 
+            id="frequencyInput" 
+            placeholder="Enter frequency in Hz (Example: 110)"
+            step="0.01"
+        >
+
+        <button id="detectButton">Detect Note</button>
+
+        <h2 id="noteDisplay">--</h2>
+
+        <p id="frequencyDisplay">Enter a frequency</p>
+
+    </main>
+    
+    <script src="app.js"></script>
+
 </body>
 </html>
